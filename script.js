@@ -36,20 +36,20 @@ async function checkWeather(city){
 
 
     switch(weather_data.weather[0].main){
-        case 'Clouds':
-            weather_img.src = "/assets/cloud.png";
+        case 'cloudy':
+            weather_img.src = "/assets/cloudy.png";
             break;
-        case 'Clear':
+        case 'clear':
             weather_img.src = "/assets/clear.png";
             break;
-        case 'Rain':
-            weather_img.src = "/assets/rain.png";
+        case 'rainy':
+            weather_img.src = "/assets/rainy.png";
             break;
-        case 'Mist':
+        case 'mist':
             weather_img.src = "/assets/mist.png";
             break;
-        case 'Snow':
-            weather_img.src = "/assets/snow.png";
+        case 'thunderstorm':
+            weather_img.src = "/assets/thunderstorm.png";
             break;
 
     }
@@ -61,3 +61,8 @@ async function checkWeather(city){
 searchBtn.addEventListener('click', ()=>{
     checkWeather(inputBox.value);
 });
+
+
+
+
+
